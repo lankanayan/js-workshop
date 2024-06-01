@@ -1,7 +1,5 @@
-// console.log("Hello World");
-// console.log(document.getElementById("main"));
-
 // Set the inner HTML of the element with ID 'main' to "TO-DO LIST"
+
 
 // Define the function to add a task to the to-do list
 function addTask() {
@@ -56,18 +54,15 @@ function addTask() {
     deleteButton.textContent = 'Delete';
     // Define the onclick event for the delete button
     deleteButton.onclick = function() {
-        // Remove the list item from the task list
         taskList.removeChild(listItem);
     };
 
     // Set the text content of the list item to the task text
     listItem.textContent = taskText;
 
-    // Append the checkbox to the list item
+    // Append the checkbox, edit button, and delete button to the list item
     listItem.appendChild(checkbox);
-    // Append the edit button to the list item
     listItem.appendChild(editButton);
-    // Append the delete button to the list item
     listItem.appendChild(deleteButton);
 
     // Append the list item to the task list
@@ -77,10 +72,4 @@ function addTask() {
     taskInput.value = '';
 }
 
-// Add an event listener to the task input element to listen for keypress events
-document.getElementById('taskInput').addEventListener('keypress', function(event) {
-    // If the Enter key is pressed, call the addTask function
-    if (event.key === 'Enter') {
-        addTask();
-    }
-});
+

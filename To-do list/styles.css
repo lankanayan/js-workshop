@@ -1,0 +1,67 @@
+/* Apply box-sizing to include padding and border in the element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Styling the main container */
+.todo-container {
+    border: 2px solid #333; /* Border with solid line and dark grey color */
+    border-radius: 10px; /* Rounded corners with 10px radius */
+    background: #f0f0f0; /* Light grey background color */
+    color: #333; /* Dark grey text color */
+    font-family: Arial, sans-serif; /* Font family */
+    padding: 10px; /* Padding inside the box */
+    margin: 20px auto; /* Margin outside the box, centered horizontally */
+    text-align: center; /* Center-aligned text */
+    width: 300px; /* Fixed width */
+}
+
+/* Styling the task input */
+.task-input {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 10px; /* Space below the input */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling the task list */
+.task-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Left-aligned text for tasks */
+}
+
+/* Styling each task item */
+.task-list li {
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    background: #fff; /* White background */
+    padding: 10px; /* Padding inside the item */
+    margin-bottom: 5px; /* Space below each item */
+    display: flex; /* Flexbox layout for items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Styling the checkbox */
+.task-list input[type="checkbox"] {
+    margin-right: 10px; /* Space to the right of the checkbox */
+}
+
+/* Styling the edit button */
+.task-list button {
+    margin-left: 10px; /* Space to the left of the button */
+    padding: 5px 10px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Add hover effect for the edit button */
+.task-list button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
